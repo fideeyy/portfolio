@@ -3,8 +3,10 @@ body{
     color:wheat;
     font-family: Arial;
     box-sizing: border-box;
+    margin:0px;
     
 }
+
 
 /* Header */
 
@@ -13,6 +15,10 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    background-color: black;
+     padding:6px;
+     position: fixed;
+     width:100%;
 }
 /* 
 .header .i{
@@ -37,6 +43,8 @@ body{
     text-decoration: none;
     margin-left: 25px;
     font-size: 25px;
+
+
     
 }
 
@@ -170,11 +178,11 @@ body{
 .project h1{
     font-size: 100px;
     text-align: center;
+    color: brown;
 }
-.project span{
-    color: orange;
+
     
-}
+
 #d{
     height:1000px;
     width: 1000px;
@@ -207,6 +215,7 @@ p{
     border-radius: 30px;
     text-align: center;
     background-color: rgb(14, 14, 35);
+    color:blanchedalmond
 }
 .contaact button{
     margin-left:600px ;
@@ -223,228 +232,210 @@ p{
 }
 .contaact p{
     font-size: 30px;
-    color:rgb(198, 126, 32)
+    color:rgb(177, 110, 28)
 }
 footer{
     text-align: center;
     margin-top: 60px;
-    padding: 40px,50px;
     background-color: rgb(146, 102, 44);color: rgb(75, 11, 11);
+    padding-bottom: 10px;
+    height: 160px;
 }
-@media (max-width: 768px) {
- 
-    /* ── Header ── */
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px 24px;
-        gap: 16px;
-    }
- 
-    .navbar {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
- 
-    .navbar a {
-        font-size: 13px;
-    }
- 
-    #c {
-        flex-direction: row;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
- 
-    .contact {
-        font-size: 12px;
-        padding: 8px 18px;
-    }
- 
-    #icon {
-        font-size: 20px;
-        gap: 12px;
-        margin-top: 0;
-    }
- 
-    /* ── Hero / Home ── */
-    .home {
-        flex-direction: column-reverse;
-        padding: 60px 24px 48px;
-        min-height: auto;
-        text-align: center;
-        gap: 40px;
-    }
- 
-    .home::before {
-        display: none;
-    }
- 
-    .home-content {
-        max-width: 100%;
-    }
- 
-    .home-content h3 {
-        font-size: 13px;
-    }
- 
-    .home-content h1 {
-        font-size: 38px;
-        letter-spacing: -0.5px;
-    }
- 
-    .home-content p {
-        font-size: 15px;
-        max-width: 100%;
-        margin: 0 auto 32px;
-    }
- 
-    .btn-box {
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-        flex-wrap: wrap;
-    }
- 
-    .btn-1,
-    .btn-2 {
-        padding: 10px 24px;
-        font-size: 13px;
-    }
- 
-    .img-box {
-        display: flex;
-        justify-content: center;
-    }
- 
-    .img-box::before {
-        display: none;
-    }
- 
-    #first {
-        width: 240px;
-        height: 240px;
-    }
- 
-    /* ── About ── */
-    .about {
-        flex-direction: column;
-        padding: 60px 24px;
-        gap: 32px;
-        text-align: center;
-    }
- 
-    .about-img {
-        width: 100%;
-        max-width: 320px;
-        height: 280px;
-        margin: 0 auto;
-        border-radius: var(--radius-md);
-    }
- 
-    .about-text p {
-        text-align: left;
-    }
- 
-    .about-text h2,
-    .i1,
-    .i2 {
-        font-size: 28px;
-    }
- 
-    #icon {
-        justify-content: center;
-    }
- 
-    /* ── Skills ── */
-    .Skills {
-        flex-direction: column;
-        padding: 60px 24px;
-        gap: 40px;
-        align-items: flex-start;
-    }
- 
-    .h1 {
-        font-size: 42px;
-        padding-left: 0;
-        margin-bottom: 32px;
-    }
- 
-    .ul {
-        font-size: 30px;
-        padding-left: 0;
-    }
- 
-    .imgfd {
-        width: 100%;
-    }
- 
-    .img1 {
-        width: 100%;
-        height: auto;
-        border-radius: var(--radius-md);
-    }
- 
-    /* ── Projects ── */
-    .project {
-        padding: 60px 24px;
-    }
- 
-    .project h1 {
-        font-size: 44px;
-        letter-spacing: -1px;
-        margin-bottom: 40px;
-    }
- 
-    #d {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
- 
-    #c {
-        grid-template-columns: 1fr;
-    }
- 
-    .card {
-        padding: 20px;
-    }
- 
-    /* ── Contact ── */
-    .contaact {
-        padding: 60px 24px;
-    }
- 
-    .contaact h1 {
-        font-size: 36px;
-    }
- 
-    .contaact p {
-        font-size: 15px;
-    }
- 
-    .contaact input,
-    .contaact textarea {
-        margin-left: 0;
-        width: 100%;
-    }
- 
-    .contaact button {
-        margin-left: 0;
-        width: 100%;
-    }
- 
-    /* ── Footer ── */
-    footer {
-        padding: 36px 24px;
-        font-size: 12px;
+/* =========================
+   RESPONSIVE MEDIA QUERY
+========================= */
+
+@media (max-width: 768px){
+
+    *{
+        box-sizing: border-box;
     }
 
- 
-    /* ── General ── */
-    p {
-        font-size: 15px;
-        text-align: left;
+    body{
+        overflow-x: hidden;
     }
-}
+
+    /* HEADER */
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo{
+        margin-left: 0;
+        font-size: 38px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a{
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+    #icon{
+        justify-content: center;
+        gap: 15px;
+        font-size: 25px;
+    }
+
+    /* HOME SECTION */
+
+    .home{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home-content h3{
+        font-size: 28px;
+    }
+
+    .home-content h1{
+        font-size: 45px;
+    }
+
+    .home-content p{
+        width: 100%;
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .img-box{
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    #first{
+        width: 250px;
+        height: 250px;
+        margin-top: 0;
+    }
+
+    /* ABOUT SECTION */
+
+    .about{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .about-img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .i1,
+    .i2{
+        font-size: 32px;
+    }
+
+    /* SKILLS SECTION */
+
+    .Skills{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .h1{
+        font-size: 50px;
+        padding-left: 0;
+    }
+
+    .ul{
+        font-size: 32px;
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    .img1{
+        width: 250px;
+        height: 250px;
+    }
+
+    .imgfd{
+        width: 220px;
+    }
+
+    /* PROJECT SECTION */
+
+    .project h1{
+        font-size: 45px;
+    }
+
+    #d{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .project p{
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    /* CONTACT SECTION */
+
+    .contaact{
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .contaact h1{
+        font-size: 40px;
+    }
+
+    .contaact p{
+        font-size: 20px;
+    }
+
+    .contaact input,
+    .contaact button{
+        width: 100%;
+        max-width: 350px;
+        margin-left: 0;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 20px;
+    }
+
+    footer h1{
+        font-size: 24px;
+    }
+
+    footer p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    
+    }

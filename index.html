@@ -12,10 +12,23 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="portfolio3.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        
+</script>
+<script src="index.js"></script>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "xrfpLrp86TbtihsM7",
+      });
+   })();
+</script>
+
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header class="header">
 
@@ -28,7 +41,7 @@
             <a href="#aboutt">About</a>
             <a href="#skillss">Skills</a>
             <a href="#proj">Projects</a>
-        </nav>
+            </nav>
         <div id="c">
             <a href="#cod" class="contact">contact me</a>
             <div id="icon">
@@ -44,10 +57,10 @@
                     <i class="fa-brands fa-instagram"></i>
                  </a>
 </a>
-
+                </div>
             </div>
         </div>
-
+       
 
 
 
@@ -128,9 +141,9 @@
     </section>
     <section class="project" id="proj">
         <div class="pro">
-            <u>
-                <h1><span>P</span>roject</h1>
-            </u>
+            
+                <h1>Project</h1>
+            
         </div>
         <img src="Screenshot 2026-05-21 193505.png" alt="" id="d">
         <p>Creacted the W3schools navigation system with responsive design,<br>dropdown menus,and smooth animations.<br>focus on clean code structure and cross browser compatibility</p>
@@ -143,8 +156,8 @@
          <input type="text" name="text" id="text" placeholder="Your Name"><br><br>
          <input type="email" name="email" id="email" placeholder="Your Email"><br><br>
          <input type="text" name="subject" id="subject" placeholder="Subject"><br><br>
-         <input type="text" name="your message" id="your message" placeholder="Your Message"><br><br>
-         <button type= "sent message">Send message</button>
+         <input type="text" name="your message" id="yourmessage" placeholder="Your Message"><br><br>
+         <button type="submit" onclick="sendMail()">Send message</button>
 
         </div>
     </section>
@@ -153,7 +166,7 @@
            <h1> Tankyou For visiting Our Website.</h1>
            <p>stay connected with us for updates,projects,and creative content.<br>your support means a lot!</p>
           <pclass="copyright">
-            © 2026 Your Website Name | All Rights Reserved
+            © 2026 fida| All Rights Reserved
         </p>
         </footer>
     </section>
